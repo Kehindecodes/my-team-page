@@ -1,0 +1,210 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* utitlies */
+a {
+	color: #4f4f4f;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	max-width: 1980px;
+}
+.container {
+	padding: 6.875rem 10rem;
+}
+/* section- who we are */
+.who_we_are {
+	display: flex;
+	margin-bottom: 6rem;
+}
+
+.who_we_are h1 {
+	font-family: 'PT Serif', serif;
+	font-weight: 700;
+	font-size: 2.25rem;
+	margin-right: 13.438rem;
+}
+
+.who_we_are .content {
+	font-size: 1.125rem;
+}
+.who_we_are .content h2 {
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+/* section team profile  */
+.team_profile {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 3.54rem;
+}
+.product_owner,
+.art_director,
+.tech_lead,
+.ux_designer,
+.developer1,
+.developer {
+	position: relative;
+	padding: 2rem;
+}
+.profile_title {
+	position: absolute;
+	right: 0;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	font-family: 'PT Serif', serif;
+	font-size: 0.75rem;
+	font-weight: 400;
+	margin-right: 0.6rem;
+}
+.team_profile img {
+	width: 238px;
+}
+.team_profile .name {
+	font-weight: 600;
+	font-size: 1.125rem;
+}
+.team_profile .art_director,
+.developer1 {
+	margin-top: 6rem;
+}
+/* footer */
+footer {
+	font-size: 0.875rem;
+	color: #bdbdbd;
+	text-align: center;
+	margin-top: auto;
+	padding: 2rem;
+}
+
+footer .dev {
+	font-weight: 700;
+}
+
+@media (min-width: 850px) and (max-width: 1024px) {
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+	.container {
+		width: 100%;
+		padding: 3rem 4rem;
+	}
+	.team_profile {
+		grid-gap: 1rem;
+	}
+	.product_owner,
+	.art_director,
+	.tech_lead,
+	.ux_designer,
+	.developer1,
+	.developer {
+		padding: 0.5rem;
+		width: 180px;
+	}
+	.profile_title {
+		margin-right: -5.5rem;
+	}
+}
+/* ipad */
+@media (min-width: 768px) and (max-width: 850px) {
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+	.container {
+		width: 100%;
+		padding: 3rem 2rem;
+	}
+	.team_profile {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0;
+		width: 100%;
+	}
+	.profile_title {
+		margin-right: 4rem;
+	}
+}
+/* small screens */
+@media (max-width: 767px) {
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
+	.container {
+		width: 100%;
+		padding: 2rem 1.188rem;
+	}
+	.content p br {
+		display: none;
+	}
+	.who_we_are {
+		display: block;
+		margin-bottom: 6rem;
+	}
+	.who_we_are h1 {
+		margin-right: 0;
+		margin-bottom: 2.375rem;
+	}
+	.team_profile {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0;
+		width: 100%;
+	}
+	.team_profile img {
+		width: 120.72px;
+	}
+	.developer1 {
+		margin-top: 0;
+	}
+	.team_profile .art_director,
+	.developer,
+	.ux_designer {
+		margin-top: 2.4rem;
+	}
+	.team_profile .name {
+		font-size: 0.875rem;
+	}
+	.product_owner,
+	.art_director,
+	.tech_lead,
+	.ux_designer,
+	.developer1,
+	.developer {
+		padding: 0.5rem;
+		width: 180px;
+	}
+	.profile_title {
+		margin-right: 2rem;
+		font-size: 0.625rem;
+	}
+	footer {
+		padding: 1rem;
+	}
+	/* small mobile screens */
+
+	@media (max-width: 355px) {
+		.team_profile img {
+			width: 80.72px;
+		}
+		.profile_title {
+			margin-right: 1rem;
+		}
+		.product_owner,
+		.art_director,
+		.tech_lead,
+		.ux_designer,
+		.developer1,
+		.developer {
+			width: 120px;
+		}
+	}
+}
