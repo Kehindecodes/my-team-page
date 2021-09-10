@@ -113,6 +113,14 @@ footer .dev {
 	.profile_title {
 		margin-right: -5.5rem;
 	}
+	.developer1 {
+		margin-top: 0;
+	}
+	.team_profile .art_director,
+	.developer,
+	.ux_designer {
+		margin-top: 2.4rem;
+	}
 }
 /* ipad */
 @media (min-width: 768px) and (max-width: 850px) {
@@ -131,6 +139,14 @@ footer .dev {
 	}
 	.profile_title {
 		margin-right: 4rem;
+	}
+	.developer1 {
+		margin-top: 0;
+	}
+	.team_profile .art_director,
+	.developer,
+	.ux_designer {
+		margin-top: 2.4rem;
 	}
 }
 /* small screens */
